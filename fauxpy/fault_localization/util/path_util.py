@@ -3,6 +3,7 @@ import pathlib
 from typing import List
 
 from fauxpy.session_lib.fauxpy_path import FauxpyPath
+# from fauxpy.utils.deprecated import deprecated
 
 
 class PathUtil:
@@ -72,6 +73,7 @@ class PathUtil:
         else:
             return False
 
+    # @deprecated("Use FauxpyPath instead. This method will be removed in a future release.")
     def relative_path_to_abs_path(self, rel_path: str) -> str:
         """
         Converts a relative path (from the project root) to an absolute path.
@@ -85,6 +87,7 @@ class PathUtil:
         abs_src = self._project_working_directory / rel_path
         return str(abs_src.resolve())
 
+    # @deprecated("Use FauxpyPath instead. This method will be removed in a future release.")
     def absolute_path_to_relative_path(self, abs_path: str) -> str:
         """
         Converts an absolute path to a relative path from the project root.
