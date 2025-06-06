@@ -1,5 +1,9 @@
 # FauxPy Changelog
 
+## FauxPy 0.7.0
+
+- Update minimum supported Python version to 3.7.
+
 ## FauxPy 0.6.0
 
 - Revise the documentation.
